@@ -1,0 +1,19 @@
+
+body {background: 
+	  url(http://res.cloudinary.com/dbiv3maux/image/upload/v1500845287/painting-2407262_1920_gnsf3l.jpg);
+  	  background-repeat: no-repeat;
+  	  background-size: cover;}
+
+h1 {text-align: center;
+    color: black;}
+
+.can {background: #fdfdfd;
+ 	  border-radius: 20px;
+ 	  border-style: solid;
+ 	  border-color: lightgrey;
+ 	  box-shadow: 3px 3px 20px black;
+ 	  margin: 0 auto;}
+
+canvas {width: }
+
+.btn-group {margin: 0 auto;}
