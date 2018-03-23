@@ -1,11 +1,9 @@
 <head>
   <meta charset="utf-8">
   <title>Paint App</title>
-
-
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">  
   <link rel="stylesheet" type="text/css" href="paint_styles.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
 </head>
 <body>
   <div class="container-fluid col-xs-11 offset-xs-1 col-lg-8 offset-lg-2">
@@ -14,7 +12,7 @@
     <br>
     <div class="row">
       <div class="can">
-        <canvas id="canvas" width="800" height="450"></canvas>
+        <canvas id="canvas" width="850px" height="450px"></canvas>
       </div>
     </div>
     <br>
@@ -24,7 +22,7 @@
           Choose Colour:
           <input type="color" id="pickColour"></input>
         </button>
-        <button type="button" class="btn btn-secondary" onclick="reDraw()">Draw</button>
+        <button type="button" id="draw" class="btn btn-secondary" onclick="reDraw()">Draw</button>
         <button type="button" class="btn btn-secondary">
           Choose Thickness
           <select id="thickness">
@@ -42,9 +40,9 @@
             <option value="23">12</option>
           </select>
         </button>
-        <button type="button" class="btn btn-secondary" onclick="erase()">Erase</button>
-        <button type="button" class="btn btn-secondary" onclick="clearCanvas()">Clear Canvas</button>
-        <button type="button" class="btn btn-secondary" onclick="saveImage()">Save</button>
+        <button type="button" id="erase" class="btn btn-secondary" onclick="erase()">Erase</button>
+        <button type="button" id="clear" class="btn btn-secondary" onclick="clearCanvas()">Clear Canvas</button>
+        <button type="button" id="save" class="btn btn-secondary" onclick="saveImage()">Save</button>
       </div>
     </div>
   </div>

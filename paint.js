@@ -1,5 +1,32 @@
 "use strict";
 
+function press(element) {
+
+  element = document.getElementById(element);
+  console.log(element);
+
+  // if there are no elements, we're done
+  if (!element) { return; }
+
+  // add class to chosen element
+  element.classList.add('pressed');
+}
+
+function depress() {
+  var actions = ['draw', 'erase'];
+
+  for (var i in actions) {
+    if (document.getElementById(actions[i]).classList.contains('pressed')) {
+      // this is the element we want to depress
+      document.getElementById(actions[i]).classList.remove('pressed');
+      break;
+    } else {
+      continue;
+    }
+  }
+  
+}
+
 function saveImage() {
   var link = document.createElement("a");
   try {
@@ -71,10 +98,14 @@ canvas.addEventListener("mousedown", function(event) {
 });
 
 function erase() {
+  depress();
+  press('erase');
   cx.globalCompositeOperation = "destination-out";
 }
 
 function reDraw() {
+  depress();
+  press('draw');
   cx.globalCompositeOperation = "source-over";
 }
 

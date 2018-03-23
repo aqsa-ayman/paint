@@ -1,8 +1,13 @@
 
 body {background: 
-	  url(http://res.cloudinary.com/dbiv3maux/image/upload/v1500845287/painting-2407262_1920_gnsf3l.jpg);
+  url(https://images.pexels.com/photos/704987/pexels-photo-704987.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350);
+	  /* url(http://res.cloudinary.com/dbiv3maux/image/upload/v1500845287/painting-2407262_1920_gnsf3l.jpg); */
   	  background-repeat: no-repeat;
-  	  background-size: cover;}
+      background-size: cover;
+      background-position: center;
+      font-family: 'Love Ya Like A Sister', cursive;
+    }
+  
 
 h1 {text-align: center;
     color: black;}
@@ -12,8 +17,15 @@ h1 {text-align: center;
  	  border-style: solid;
  	  border-color: lightgrey;
  	  box-shadow: 3px 3px 20px black;
- 	  margin: 0 auto;}
-
-canvas {width: }
+    margin: 0 auto;
+ }
 
 .btn-group {margin: 0 auto;}
+
+.pressed {
+  background-color: #e6e6e6;
+  border-color: #adadad;
+  box-shadow:         inset 1px 1px 10px #000000;
+  -moz-box-shadow:    inset 1px 1px 10px #000000;
+  -webkit-box-shadow: inset 1px 1px 10px #000000;
+}
