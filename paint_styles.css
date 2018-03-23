@@ -5,22 +5,26 @@ body {background:
   	  background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      font-family: 'Love Ya Like A Sister', cursive;
     }
   
 
 h1 {text-align: center;
-    color: black;}
+    color: black;
+    font-family: 'Love Ya Like A Sister', cursive;
+  }
 
 .can {background: #fdfdfd;
  	  border-radius: 20px;
  	  border-style: solid;
  	  border-color: lightgrey;
- 	  box-shadow: 3px 3px 20px black;
+    box-shadow: 3px 3px 20px black;
+    padding: 10px;
     margin: 0 auto;
  }
 
-.btn-group {margin: 0 auto;}
+.btn-group {
+  margin: 0 auto;
+}
 
 .pressed {
   background-color: #e6e6e6;

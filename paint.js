@@ -28,17 +28,13 @@ function depress() {
 }
 
 function saveImage() {
-  var link = document.createElement("a");
   try {
-    link.href = canvas.toDataURL();
-    console.log(link);
+    document.getElementById("save").download = "image.png";
+    document.getElementById("save").href = document.getElementById("canvas").toDataURL("image/png").replace(/^data:image\/[^;]/, 'data:application/octet-stream');
   }
   catch (error) {
     alert("Can't save: " + error.toString());
   }
-  link.addEventListener("mouseover", saveImage);
-  link.addEventListener("focus", saveImage);
-  window.open(link);
 }
 
 
